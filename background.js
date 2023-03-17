@@ -1,4 +1,4 @@
-const targetUrl = "https://desk.zoho.com/agent/zorts/zorts/tickets/list/all-cases"; // replace with the URL of the desired tab
+const targetUrl = "https://example.com"; // replace with the URL of the desired tab
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (tab.url === targetUrl && changeInfo.status === 'complete') {
